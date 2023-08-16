@@ -1,0 +1,12 @@
+*.suo
+*.user
+*.vs
+*.dll
+*.pdb
+_ReSharper.*
+bin
+obj
+packages
+**/bin/
+# Ignore compiled binaries
+bin/
