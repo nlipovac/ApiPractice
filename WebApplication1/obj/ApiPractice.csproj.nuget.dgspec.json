@@ -4,14 +4,86 @@
     "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj": {}
   },
   "projects": {
-    "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj": {
+    "C:\\NedzadPractice\\WebApplication1\\Dummy\\Dummy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj",
-        "projectName": "ApiPractice",
-        "projectPath": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj",
+        "projectUniqueName": "C:\\NedzadPractice\\WebApplication1\\Dummy\\Dummy.csproj",
+        "projectName": "Dummy",
+        "projectPath": "C:\\NedzadPractice\\WebApplication1\\Dummy\\Dummy.csproj",
         "packagesPath": "C:\\Users\\nlipovac\\.nuget\\packages\\",
-        "outputPath": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "C:\\NedzadPractice\\WebApplication1\\Dummy\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nlipovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj": {
+                "projectPath": "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.120\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj",
+        "projectName": "Types",
+        "projectPath": "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj",
+        "packagesPath": "C:\\Users\\nlipovac\\.nuget\\packages\\",
+        "outputPath": "C:\\NedzadPractice\\WebApplication1\\Types\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +116,164 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.120\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\WeatherForecastService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\WeatherForecastService.csproj",
+        "projectName": "WeatherForecastService",
+        "projectPath": "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\WeatherForecastService.csproj",
+        "packagesPath": "C:\\Users\\nlipovac\\.nuget\\packages\\",
+        "outputPath": "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nlipovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\NedzadPractice\\WebApplication1\\Dummy\\Dummy.csproj": {
+                "projectPath": "C:\\NedzadPractice\\WebApplication1\\Dummy\\Dummy.csproj"
+              },
+              "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj": {
+                "projectPath": "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.120\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj",
+        "projectName": "ApiPractice",
+        "projectPath": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\ApiPractice.csproj",
+        "packagesPath": "C:\\Users\\nlipovac\\.nuget\\packages\\",
+        "outputPath": "C:\\NedzadPractice\\WebApplication1\\WebApplication1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nlipovac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj": {
+                "projectPath": "C:\\NedzadPractice\\WebApplication1\\Types\\Types.csproj"
+              },
+              "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\WeatherForecastService.csproj": {
+                "projectPath": "C:\\NedzadPractice\\WebApplication1\\WeatherForecastService\\WeatherForecastService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -67,7 +297,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.116\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.120\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7QXvhlBX54QTa2Oiz1usM14zEs3hngvrFGvA2PAsodgiFalXxQ33QpX255m8868gwSbMJKBrS/8ka3yQfLARZA==",
+  "success": true,
+  "projectFilePath": "C:\\NedzadPractice\\WebApplication1\\DataAccess\\DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nlipovac\\.nuget\\packages\\autofac\\7.0.0\\autofac.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlipovac\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
+    "C:\\Users\\nlipovac\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

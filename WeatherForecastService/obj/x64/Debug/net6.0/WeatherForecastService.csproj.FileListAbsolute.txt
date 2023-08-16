@@ -1,0 +1,17 @@
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.GeneratedMSBuildEditorConfig.editorconfig
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.AssemblyInfoInputs.cache
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.AssemblyInfo.cs
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.csproj.CoreCompileInputs.cache
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\WeatherForecastService.deps.json
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\WeatherForecastService.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\ref\WeatherForecastService.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\WeatherForecastService.pdb
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\Dummy.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\Types.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\Dummy.pdb
+C:\NedzadPractice\WebApplication1\WeatherForecastService\bin\Debug\net6.0\Types.pdb
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.csproj.AssemblyReference.cache
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.csproj.CopyComplete
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\ref\WeatherForecastService.dll
+C:\NedzadPractice\WebApplication1\WeatherForecastService\obj\x64\Debug\net6.0\WeatherForecastService.pdb

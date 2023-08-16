@@ -8,10 +8,25 @@
     ".NETCoreApp,Version=v6.0": {
       "ApiPractice/1.0.0": {
         "dependencies": {
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Autofac": "7.0.0",
+          "Serilog": "2.12.0",
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "Types": "1.0.0",
+          "WeatherForecastService": "1.0.0"
         },
         "runtime": {
           "ApiPractice.dll": {}
+        }
+      },
+      "Autofac/7.0.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -20,6 +35,14 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.2.3.0",
             "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "Serilog/2.12.0": {
+        "runtime": {
+          "lib/net6.0/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.12.0.0"
           }
         }
       },
@@ -60,6 +83,37 @@
             "fileVersion": "6.2.3.0"
           }
         }
+      },
+      "System.Diagnostics.DiagnosticSource/4.7.1": {},
+      "Dummy/1.0.0": {
+        "dependencies": {
+          "Autofac": "7.0.0",
+          "Serilog": "2.12.0",
+          "Types": "1.0.0"
+        },
+        "runtime": {
+          "Dummy.dll": {}
+        }
+      },
+      "Types/1.0.0": {
+        "dependencies": {
+          "Autofac": "7.0.0",
+          "Serilog": "2.12.0"
+        },
+        "runtime": {
+          "Types.dll": {}
+        }
+      },
+      "WeatherForecastService/1.0.0": {
+        "dependencies": {
+          "Autofac": "7.0.0",
+          "Dummy": "1.0.0",
+          "Serilog": "2.12.0",
+          "Types": "1.0.0"
+        },
+        "runtime": {
+          "WeatherForecastService.dll": {}
+        }
       }
     }
   },
@@ -68,6 +122,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-phR/GEk5h2kQWbMl70cZzCW5ysGxmz2ClaX5CuTw9qc3wtdDu3l9GAhWiWmZLltCytEIxIw98NtAraiOxazqLg==",
+      "path": "autofac/7.0.0",
+      "hashPath": "autofac.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
@@ -82,6 +143,13 @@
       "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
+    },
+    "Serilog/2.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xaiJLIdu6rYMKfQMYUZgTy8YK7SMZjB4Yk50C/u//Z4OsvxkUfSPJy4nknfvwAC34yr13q7kcyh4grbwhSxyZg==",
+      "path": "serilog/2.12.0",
+      "hashPath": "serilog.2.12.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",
@@ -110,6 +178,28 @@
       "sha512": "sha512-bCRI87uKJVb4G+KURWm8LQrL64St04dEFZcF6gIM67Zc0Sr/N47EO83ybLMYOvfNdO1DCv8xwPcrz9J/VEhQ5g==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.2.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    },
+    "Dummy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Types/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeatherForecastService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

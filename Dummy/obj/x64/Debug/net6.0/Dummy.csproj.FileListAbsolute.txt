@@ -1,0 +1,15 @@
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.GeneratedMSBuildEditorConfig.editorconfig
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.AssemblyInfoInputs.cache
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.AssemblyInfo.cs
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.csproj.CoreCompileInputs.cache
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\Dummy.deps.json
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\Dummy.dll
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\ref\Dummy.dll
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\Dummy.pdb
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\Types.dll
+C:\NedzadPractice\WebApplication1\Dummy\bin\Debug\net6.0\Types.pdb
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.csproj.AssemblyReference.cache
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.csproj.CopyComplete
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.dll
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\ref\Dummy.dll
+C:\NedzadPractice\WebApplication1\Dummy\obj\x64\Debug\net6.0\Dummy.pdb
