@@ -9,4 +9,3 @@ C:\NedzadPractice\WebApplication1\Types\bin\Debug\net6.0\Types.pdb
 C:\NedzadPractice\WebApplication1\Types\obj\x64\Debug\net6.0\Types.dll
 C:\NedzadPractice\WebApplication1\Types\obj\x64\Debug\net6.0\ref\Types.dll
 C:\NedzadPractice\WebApplication1\Types\obj\x64\Debug\net6.0\Types.pdb
-C:\NedzadPractice\WebApplication1\Types\obj\x64\Debug\net6.0\Types.csproj.AssemblyReference.cache
