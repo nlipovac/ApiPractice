@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
             _logger = logger;
             _service = new WeatherForecastService.WeatherForecastService(
                 dummy: new DummyWeatherSupplier(),
-                openWeather: new OpenWeatherSupplier()
+                openWeather: new OpenWeatherSupplier(new OpenWeatherAdapter(new ConfigurationBuilder().AddUserSecrets("2c63de453e6f9183e17349b362a589fb").Build()))
                 );
         }
 
