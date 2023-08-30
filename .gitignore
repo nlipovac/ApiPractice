@@ -1,8 +1,0 @@
-*.suo
-*.user
-*.vs
-*.cache
-_ReSharper.*
-bin
-obj
-packages
