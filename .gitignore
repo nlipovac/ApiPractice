@@ -1,0 +1,56 @@
+# Ignore Visual Studio files and folders
+.vscode/
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore compiled files
+*.dll
+*.pdb
+
+# Ignore cache and temporary files
+.cache/
+*.log
+logs/
+logs/*
+bin
+obj
+
+# Ignore build artifacts
+/bin/
+/obj/
+
+# Ignore package manager directories
+node_modules/
+packages/
+npm-debug.log*
+yarn-error.log*
+
+# Ignore operating system and IDE generated files
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific files
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.vscode/
+*.swp
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local
+
+# Ignore sensitive or private configuration files
+config.json
+secrets.yaml
+
+# Ignore backup files
+*~
+*.bak
