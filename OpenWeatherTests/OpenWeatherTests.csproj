@@ -1,5 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+	
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -7,11 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.69" />
     <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OpenWeather\OpenWeather.csproj" />
+    <ProjectReference Include="..\TestHelpers\TestHelpers.csproj" />
     <ProjectReference Include="..\Types\Types.csproj" />
   </ItemGroup>
 

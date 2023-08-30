@@ -8,10 +8,14 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+		<PackageReference Include="Moq" Version="4.20.69" />
+		<PackageReference Include="NUnit" Version="3.13.2" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
 		<PackageReference Include="OpenWeatherMap.Standard" Version="2.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+		<ProjectReference Include="..\TestHelpers\TestHelpers.csproj" />
 		<ProjectReference Include="..\Types\Types.csproj" />
 	</ItemGroup>
 

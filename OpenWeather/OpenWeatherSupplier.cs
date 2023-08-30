@@ -21,7 +21,7 @@ namespace OpenWeather
             var results = await _api.GetForecastDataByCoordinatesAsync(criteria.Latitude, criteria.Longitude);
 
             return results
-                .WeatherData
+                .WeatherData?
                 .Where(w => w.AcquisitionDateTime > DateTime.Today.AddHours(23).AddMinutes(59) && w.AcquisitionDateTime < DateTime.Today.AddDays(criteria.Days))
                 .ToList()
                 .ConvertAll(w => new WeatherForecast
