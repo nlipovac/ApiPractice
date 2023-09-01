@@ -13,20 +13,16 @@ namespace WebApplication1.Controllers
     {
 
         private readonly IWeatherForecastService _service;
-        private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+        public WeatherForecastController(IWeatherForecastService service)
         {
-            _logger = logger;
-            _service = new WeatherForecastService.WeatherForecastService(
-                dummy: new DummyWeatherSupplier(),
-                openWeather: new OpenWeatherSupplier(new OpenWeatherAdapter(new ConfigurationBuilder().AddUserSecrets("2c63de453e6f9183e17349b362a589fb").Build()))
-                );
+            _service=service;
         }
 
         [HttpPost]
         [Route("/GetWeatherForecast")]
-        public async Task<ActionResult<IEnumerable<WeatherForecast>>> Get(WeatherForecastCriteria criteria, string supplierName = "Dummy")
+        public async Task<ActionResult<IEnumerable<WeatherForecast>>> Post(WeatherForecastCriteria criteria, string supplierName = "Dummy")
         {
             var result = await _service.GetWeatherForecast(criteria,supplierName);
             return Ok(result);
