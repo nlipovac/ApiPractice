@@ -16,7 +16,7 @@ namespace OpenWeather
         {
             _api = api;
         }
-        public async Task<IEnumerable<WeatherForecast>> GetWeatherForecast(WeatherForecastCriteria criteria)
+        public async Task<IEnumerable<WeatherForecast>?> GetWeatherForecast(WeatherForecastCriteria criteria)
         {
             var results = await _api.GetForecastDataByCoordinatesAsync(criteria.Latitude, criteria.Longitude);
 
