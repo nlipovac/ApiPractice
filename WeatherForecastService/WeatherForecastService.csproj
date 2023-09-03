@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dummy\Dummy.csproj" />
+    <ProjectReference Include="..\Helpers\Helpers.csproj" />
     <ProjectReference Include="..\OpenWeather\OpenWeather.csproj" />
     <ProjectReference Include="..\Types\Types.csproj" />
   </ItemGroup>

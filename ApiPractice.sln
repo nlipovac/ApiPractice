@@ -30,7 +30,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers", "TestHelpers\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeatherTestProjectNunit", "OpenWeatherTestProjectNunit\OpenWeatherTestProjectNunit.csproj", "{68B887BD-6686-40BB-9025-F5A5424B70A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationService", "ConfigurationService\ConfigurationService.csproj", "{F1471F21-6971-454C-8160-00A0175750F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationService", "ConfigurationService\ConfigurationService.csproj", "{F1471F21-6971-454C-8160-00A0175750F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{98BFE740-D415-4073-ABF9-C1B76E5A529F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,6 +114,14 @@ Global
 		{F1471F21-6971-454C-8160-00A0175750F4}.Release|Any CPU.Build.0 = Release|x64
 		{F1471F21-6971-454C-8160-00A0175750F4}.Release|x64.ActiveCfg = Release|x64
 		{F1471F21-6971-454C-8160-00A0175750F4}.Release|x64.Build.0 = Release|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Debug|Any CPU.Build.0 = Debug|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Debug|x64.ActiveCfg = Debug|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Debug|x64.Build.0 = Debug|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Release|Any CPU.ActiveCfg = Release|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Release|Any CPU.Build.0 = Release|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Release|x64.ActiveCfg = Release|x64
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +136,7 @@ Global
 		{F48D1760-0870-4BD9-8473-1A1132258533} = {289E4738-2012-449E-AEC9-61EA560C23CF}
 		{68B887BD-6686-40BB-9025-F5A5424B70A4} = {FE6729A8-4C7F-4875-9E97-DB11C50A18EB}
 		{F1471F21-6971-454C-8160-00A0175750F4} = {289E4738-2012-449E-AEC9-61EA560C23CF}
+		{98BFE740-D415-4073-ABF9-C1B76E5A529F} = {289E4738-2012-449E-AEC9-61EA560C23CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {669E28DB-76C6-42D8-A323-DC255B0D82CB}

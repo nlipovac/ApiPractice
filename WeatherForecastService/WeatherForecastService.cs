@@ -1,4 +1,5 @@
 ﻿using Dummy;
+using Helpers;
 using Interfaces;
 using OpenWeather;
 using Types;
@@ -7,33 +8,24 @@ namespace WeatherForecastService
 {
     public class WeatherForecastService:IWeatherForecastService
     {
-        private readonly IWeatherSupplier _dummy;
-        private readonly IWeatherSupplier _openWeather;
+        private IEnumerable<Lazy<IWeatherSupplier, SupplierMetadata>> _suppliers;
         private readonly ILogger _logger;
 
 
-        public WeatherForecastService(IWeatherSupplier dummy,IWeatherSupplier openWeather,ILogger logger)
+        public WeatherForecastService(IEnumerable<Lazy<IWeatherSupplier,SupplierMetadata>>suppliers,ILogger logger)
         {
-              _dummy = dummy;
-              _openWeather = openWeather; 
+            _suppliers = suppliers;
              _logger = logger;
         }
         public async Task<IEnumerable<WeatherForecast>> GetWeatherForecast(WeatherForecastCriteria criteria, string supplierName)
         {
-            if(supplierName == DummyWeatherSupplier.Name)
-            {
-                _logger.Information("Requesting weather forecast from {supplier} supplier with {@criteria}", supplierName, criteria);
-                return await _dummy.GetWeatherForecast(criteria);
 
-            }
-            else if(supplierName == OpenWeatherSupplier.Name)
-            {
-                _logger.Information("Requesting weather forecast from {supplier} supplier with {@criteria}", supplierName, criteria);
-                return await _openWeather.GetWeatherForecast(criteria);
-            }
-            _logger.Error($"Unknown supplier: {supplierName}");
+            //NOTE: getting the supplier by metadata, from the lazily injected collection
+            var supplier = _suppliers.GetSupplier(supplierName);
 
-            throw new ArgumentException($"Unknown supplier :{supplierName}");
+            _logger.Information("Requesting weather forecast from {supplier} supplier with {@criteria}", supplierName, criteria);
+
+           return await supplier.GetWeatherForecast(criteria);
         }
     }
 }
