@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Types;
 
 namespace OpenWeather
 {
@@ -24,6 +25,7 @@ namespace OpenWeather
                 var _apiToken = configuration.GetString("OpenWeatherAPIToken");
                 if (string.IsNullOrWhiteSpace(_apiToken))
                     _apiToken = "2c63de453e6f9183e17349b362a589fb";
+
                 if (string.IsNullOrWhiteSpace(_apiToken)) throw new NullReferenceException("Please set the OpenWeatherAPIToken user secret");
                 return new Current(_apiToken, WeatherUnits.Metric);
             })
@@ -33,8 +35,11 @@ namespace OpenWeather
             builder.RegisterType<OpenWeatherAdapter>()
                 .As<IOpenWeatherAdapter>();
 
+            //NOTE: registering the supplier with metadata attached
             builder.RegisterType<OpenWeatherSupplier>()
-                   .Named<IWeatherSupplier>(OpenWeatherSupplier.Name);
+                   .As<IWeatherSupplier>()
+                   .WithMetadata<SupplierMetadata>(meta => meta.For(sm => sm.Name, OpenWeatherSupplier.Name))
+                   .InstancePerLifetimeScope();
         }
     }
 }
