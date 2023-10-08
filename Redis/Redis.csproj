@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.122" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Caching\Caching.csproj" />
     <ProjectReference Include="..\ConfigurationService\ConfigurationService.csproj" />
     <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
-    <ProjectReference Include="..\Memory\Memory.csproj" />
-    <ProjectReference Include="..\Redis\Redis.csproj" />
-    <ProjectReference Include="..\Types\Types.csproj" />
   </ItemGroup>
 
 </Project>

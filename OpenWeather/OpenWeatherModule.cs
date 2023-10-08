@@ -21,10 +21,10 @@ namespace OpenWeather
 
             builder.Register(c =>
             {
-                var configuration = c.Resolve<IConfigurationService>();
-                var _apiToken = configuration.GetString("OpenWeatherAPIToken");
-                if (string.IsNullOrWhiteSpace(_apiToken))
-                    _apiToken = "2c63de453e6f9183e17349b362a589fb";
+                //var configuration = c.Resolve<IConfigurationService>();
+                //var _apiToken = configuration.GetString("OpenWeatherAPIToken");
+                //if (string.IsNullOrWhiteSpace(_apiToken))
+                var _apiToken = "2c63de453e6f9183e17349b362a589fb";
 
                 if (string.IsNullOrWhiteSpace(_apiToken)) throw new NullReferenceException("Please set the OpenWeatherAPIToken user secret");
                 return new Current(_apiToken, WeatherUnits.Metric);

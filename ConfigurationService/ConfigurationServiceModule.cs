@@ -15,7 +15,7 @@ namespace ConfigurationService
         {
             base.Load(builder);
 
-            builder.Register(c=>new ConfigurationBuilder().AddUserSecrets("2c63de453e6f9183e17349b362a589fb").Build())
+            builder.Register(c => new ConfigurationBuilder().AddUserSecrets("2c63de453e6f9183e17349b362a589fb").Build())
                 .As<IConfigurationRoot>()
                 .SingleInstance();
 
