@@ -1,8 +1,14 @@
 using System.Net;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Serilog;
 using WeatherForecastService;
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("app.log", rollingInterval: RollingInterval.Day)
+    .Enrich.FromLogContext()
+    .CreateLogger();
 try
 {
     Log.Information("Starting web application");
@@ -18,6 +24,10 @@ try
     // ADD AutoFac DI
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
     builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule<WeatherForecastServiceApiModule>());
+
+    builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory()) // Set the base path
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
     var app = builder.Build();
 

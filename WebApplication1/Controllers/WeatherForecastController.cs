@@ -26,9 +26,6 @@ namespace WebApplication1.Controllers
         {
             var result = await _service.GetWeatherForecast(criteria,supplierName);
             return Ok(result);
-  //              "longitude": 43.3438,
-  //              "latitude": 17.8078,
-  //              "days": 5
         }
     }
 }
